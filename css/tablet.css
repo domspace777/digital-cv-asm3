@@ -1,0 +1,114 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Các luật CSS cho thiết bị tablet ở đây */
+
+  /* NAVBAR */
+  .nav-title__content {
+    display: none;
+  }
+  /* INFO */
+  .container.grid-about {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    }
+  h1.section-title {
+    font-size: 28px
+  }
+  /* CERTIFICATES */
+  .certificates-2{
+    display: none;
+  }
+  .certificates{
+    gap:20px;
+  }
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.certificate:first-child {
+  padding-right: 0px;
+}
+.certificate:nth-child(3){
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+}
+
+.cer-div {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.cer-md{
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+
+  .cer-text {
+    margin-left: 0;
+  }
+  .cer-text__head {
+    margin-top: 10px;
+  }
+  
+.cer-text__body p {
+  margin: 0;
+}
+
+  .cer-img img {
+    width: 100%;
+}
+    .cer-text__head,.cer-text__body {
+      font-size: 14px;
+}
+  /* PROJECTS */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project {
+    width: calc(33.33% - 20px);
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  .project-info {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .project-title {
+    padding: 14px 16px;
+  }
+ 
+  .project-title h3 {
+    font-size: 15px;
+  }
+  .project-info{
+    font-size: 14px;
+  }
+  .project-info span:first-child {
+    padding: 5px;
+    margin-left:-10px;
+}
+.project-info span {
+  margin-right: 6px;
+}
+.project-info span:last-child {
+  margin-left: 41px;
+}
+.project-table {
+  font-size: 14px;
+}
+/* footer */
+
+}

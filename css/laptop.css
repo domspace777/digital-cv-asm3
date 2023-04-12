@@ -1,0 +1,421 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'fontello',sans-serif;
+}
+.bg-grey {
+    background: #f7f7f7;
+}
+/* BANNER */
+#banner {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    /* CHỈNH HÌNH BANNER BẰNG BAACKGROUND IMAGE */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    
+}
+
+.banner-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center ;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section > .container{
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 50px;
+}
+/* NAVBAR */
+
+#nav-bar {
+    text-align: center;
+}
+
+.container.nav-list {
+
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 10px 50px;
+}
+.nav-list li:hover {
+    background-color: rgba(192, 192, 192, 0.1);
+    cursor: pointer;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+}
+.nav-item:nth-child(2),
+.nav-item:nth-child(5) {
+    border-left: 0px;
+
+}
+
+.nav-title p:first-child {
+    font-size: 28px;
+}
+
+.nav-title p:nth-child(2) {
+    color: grey;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.icon {
+    color: #2b84bc;
+} 
+
+/* INFO */
+.container.grid-about {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 50px;
+}
+@media (min-width:992px) {
+    .container.grid-about {
+        padding-left: 120px;
+    }
+    #personal-info.grid-item{
+        margin-left: 40px;
+    }
+}
+
+#target,
+#personal-info {
+    line-height: 1.5;
+}
+#personal-info {
+}
+.section-title {
+  margin-bottom: 40px;
+}
+#personal-info ul {
+    list-style: none;
+}
+#personal-info ul li {
+    margin: 6px;
+}
+#personal-info ul li:last-child {
+    margin-top: 24px;
+}
+#personal-info ul li span {
+    font-weight: 600;
+}
+
+
+/* JOB INFO */
+.container.grid-job {
+    display: grid;
+    grid-template-rows: 1fr 0.7fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+
+.job-item {
+    padding: 32px;
+    margin: 16px;
+    border: 1px solid #dee2e6;
+}
+.job-item__heading {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* justify-items: start; */
+   
+}
+.job-item__des {
+    margin: 40px auto;
+}
+.des-row {
+    /* display: flex; */
+    justify-content: start;
+    align-items: center;
+}
+.job-item__des .des-row {
+    margin: 32px auto;
+}
+.des-row__head {
+    margin: 12px 0;
+}
+.des-row__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+.job-icon {
+    font-size: 32px;
+}
+.des-row__title {
+    
+}
+.des-row__time{
+    font-style: italic;
+}
+.job-now {
+    background-color: #2b84bc;
+    color:white;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.des-row__body {
+    margin-top: 16px;
+}
+.info li a {
+    color: black;
+  }
+
+/* SO THICH */
+/* .job-item__des {
+    margin: 40px auto;
+} */
+
+.hobby {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    justify-content: center;
+    font-size: 12px;
+    color: grey;
+}
+.hobby-text {
+    margin-left: 4px;
+}
+.hobby span i {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: 1px solid #2b84bc;
+    color: #2b84bc;
+    border-radius: 50%;
+
+}
+.hobby-section .job-item__des {
+    padding-bottom: 57px;
+}
+/* NGON NGU - KY NANG */
+.line {
+    display: inline-block;
+    height: 4px;
+    margin-right:2px;
+    width: 50px;
+}
+.b-line {
+background: #199cdb;
+}
+.g-line {
+background: #dee2e6    ;
+}
+
+.lan-item,
+.skill-item {
+    margin-bottom: 18px;
+}
+
+.lan-text,
+.skill-text {
+    font-weight: 600;
+}
+
+/* CERTIFICATES */
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+@media (min-width:992px) {
+    .certificates-2{
+        display: none;
+      }
+}
+.certificate {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    padding-left: 14px;
+    margin: 20px 0;
+    /* background-color: red; */
+}
+.certificate:first-child {
+    padding-right: 20px;
+}
+.certificate:nth-child(2) {
+    border-left: 1px solid orange;
+}
+.certificate:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 1px solid orange;
+    padding-top: 30px;
+}
+.cer-div {
+    display: flex;
+    content: "";
+}
+.cer-md{
+    display: none;
+}
+.cer-img img {
+    width: 220px;
+    height:auto;
+    
+}
+.cer-text {
+    margin-left: 20px;
+}
+.cer-text__head {
+}
+.cer-text__body {
+    margin-top: 2px;
+    color: grey;
+
+}
+.cer-text__body p {
+    margin: 0;
+  }
+.cer-text__head,.cer-text__body {
+    font-size: 14px;
+}
+/* PROJECT */
+.projects {
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.project {
+    border: 1px solid #dee2e6;
+}
+.project-img {
+    width: 350px;
+}
+.project-title {
+    padding: 22px 8px;
+    
+}
+.project-info {
+    /* padding-bottom: 4px; */
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 20px 10px;
+}
+.project-info span {
+    margin-right: 24px;
+}
+.project-info span:last-child {
+    margin-right: 0px;
+}
+
+.project-info span:first-child {
+    background-color: #2b84bc;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+}
+.project-table {
+    margin: 10px;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}
+
+.td-border {
+    border-bottom: 1px solid grey;
+    border-collapse: collapse;
+}
+.projects-2 {
+    display: none;
+}
+
+
+/* FOOTER */
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+
+}
+.social-item {
+    display: inline-block;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.social-item a:hover{
+    color: #007bff;
+}
+.social-item__container {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+.social-item a {
+    color: grey;
+    text-decoration: none;
+}
+
+.social-item i {
+    color: #199cdb;
+    /* font-size: 24px; */
+    /* font-size: 150%; */
+    font-size: 2.5vw;
+}
+/* BOSUNG */
+
+.project-title a {
+    text-decoration: none;
+    color: #2b84bc;
+}
+
+/* YEU CAU NANG CAO */
+/* #banner {
+    position: relative;
+
+}
+
+.empty {
+    width: 140px;
+}
+.avatar {
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.avatar img {
+    width: 200px;
+    border-radius: 80%;
+    border: 8px solid white;
+}
+*/
+/* #personal-info {
+    padding-left: 80px;
+}  */
